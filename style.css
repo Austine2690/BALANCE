@@ -1,0 +1,360 @@
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 20px;
+
+}
+
+
+.crypto-card {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0 10px;
+    padding: 20px;
+    border: 10px solid #ffffff;
+    border-radius: 150px 20px 150px 10px;
+    box-shadow: 0px 20px 60px 1px #fff5e6;
+}
+
+
+.crypto-card img {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: -75px;
+    /* Move the image further up to overlap the card */
+    left: 50%;
+    /* Center the image horizontally */
+    transform: translateX(-50%);
+    /* Adjust for centering */
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #ff9900;
+    /* Add a border to make it stand out */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Optional shadow for better appearance */
+    z-index: 10;
+    /* Ensure the image is above the card */
+}
+
+
+
+.crypto-card .content {
+  
+    top: 70px;
+    left: 20px;
+
+}
+
+.crypto-card .content h3 {
+    border-bottom: 2px rgb(255, 136, 0) solid;
+    margin-top: 55px;
+    font-size: 30px;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 150px 20px 150px 10px;
+}
+
+.crypto-card .content h4 {
+    text-align: center;
+    margin-top: 12px;
+    background-color: #ff9900;
+    margin: 0;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 150px 20px 150px 10px;
+
+}
+
+
+
+.crypto-card .content p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    margin: 20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    margin-top: 150px;
+    width: 100%;
+}
+
+.btn1 {
+    color: rgb(255, 255, 255);
+    padding: 15px 40px;
+    border-bottom: 2px solid #ffffff;
+    border-style: solid;
+    background-color: transparent;
+    border-radius: 10px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+
+}
+
+
+.btn2 {
+
+    color: rgb(255, 255, 255);
+    padding: 15px 40px;
+    border-bottom: 2px solid #ffffff;
+    border-style: solid;
+    background-color: transparent;
+    border-radius: 10px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+
+}
+
+.btn3 {
+    color: rgb(255, 255, 255);
+    padding: 15px 40px;
+    border-bottom: 2px solid #ffffff;
+    border-style: solid;
+    background-color: transparent;
+    border-radius: 10px;
+
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+
+
+}
+
+
+.btn1:hover {
+    transition: ease-in-out 0.3s;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    border: 5px #ffffff;
+}
+
+.btn2:hover {
+    border-bottom: 2px solid #ffffff;
+    transition: ease-in-out 0.3s;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+
+.btn3:hover {
+    border-bottom: 2px solid #ffffff;
+    transition: ease-in-out 0.3s;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+
+ul {
+    display: flex;
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 30%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #ff9900;
+
+
+}
+
+ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+}
+
+ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+}
+
+ul li a:hover:before {
+    top: 0;
+}
+
+ul li:nth-child(1) a:before {
+    background: #3b5999;
+}
+
+ul li:nth-child(2) a:before {
+    background: #55acee;
+}
+
+ul li:nth-child(3) a:before {
+    background: #0077b5;
+}
+
+ul li:nth-child(4) a:before {
+    background: #dd4b39;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        margin-top: 150px;
+    }
+
+
+    ul {
+        display: flex;
+        position: relative;
+        top: -20%;
+        left: 35%;
+        margin-top: 60px;
+        margin-bottom: 0px;
+        transform: translate(-50%, -50%);
+        
+        
+    
+        
+    }
+
+ 
+    .crypto-card {
+        box-shadow: none;
+        border: 2px solid #ccc;
+        width: 333px;
+    }
+    
+.btn{
+    width: -30%;
+    padding: 0px;
+}
+
+    .crypto-card img {
+        width: 150px;
+        height: 150px;
+        top: -50px;
+    }
+
+    .crypto-card .content h3 {
+        font-size: 25px;
+    }
+
+    .crypto-card .content h4 {
+        font-size: 13px;
+    }
+
+    .crypto-card .content p {
+        font-size: 12px;
+    }
+
+    .btn1 {
+        padding: 10px 20px;
+    }
+
+    .btn2 {
+        padding: 10px 20px;
+    }
+
+    .btn3 {
+        padding: 10px 20px;
+    }
+
+    ul li a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+        margin: 0 5px;
+        border-radius: 50%;
+        
+    }
+
+    ul li a .icon {
+        font-size: 20px;
+    }
+
+    ul li a:before {
+        width: 100%;
+        height: 100%;
+    }
+}
