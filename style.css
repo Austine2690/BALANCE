@@ -20,8 +20,8 @@ body {
     align-items: center;
     padding: 10px 20px;
     
-    background-color: #ff9900;
-    color: #fff;
+    background-color: #ffffff;
+    color: #ff9900;
     position: fixed;
     top: 0;
     height: 30px;
@@ -509,7 +509,7 @@ ul li:nth-child(4) a:before {
         top: 60px;
         right: 0;
         background-color: #ff9900;
-        backdrop-filter: blur(50px);
+        /* backdrop-filter: blur(50px); */
         width: 100%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
